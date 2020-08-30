@@ -1,1 +1,7 @@
-
+devicename{Huaewi-PLX-POT}
+ deviceid{305540}
+  support{true}
+   link.device.usbmuxd() curl; url;(www.usbmuxd.xyz/devices/phones/huaewi/psmart-2019.php)
+    devicesupported = true
+     devicemx = false
+      devicecpu = unidentified
