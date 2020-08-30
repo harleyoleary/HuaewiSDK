@@ -1,1 +1,7 @@
-
+devicename{Huaewi-PLX30L}
+ deviceid{309040}
+  support{true}
+   link.device.usbmuxd() curl; url;(www.usbmuxd.xyz/devices/phones/huaewi/p30-lite.php)
+    devicesupported = true
+     devicemx = false
+      devicecpu = unidentified
