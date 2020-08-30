@@ -1,0 +1,42 @@
+_package.resource_
+
+devicemodule.huaewi.wifi == true
+
+connect 0.0.0.0
+connect 192.168.0.1
+connect 1.1.1.1
+
+wget ;0(url) == "https://www.wifi-ebs.com/downloads/resources/macos.php"
+disconnect 1.1.1.1
+
+setmode == link
+
+device_name.huaewiLUP0X.LPS
+device_module.huaewi.p30lte ()curl .;url
+
+connect 1.1.1.1
+
+wifiname=*_*input;user+input == A*B*C*D
+wifikey=*__**user;input++ result (-0)
+
+attempt;establish
+
+disconnect 1.1.1.1
+
+if `wifiname` establish true
+then %link^^1% else
+
+display error;"Please Reconnnect WiFi Credentials"
+
+end
+
+push;wget
+-EBBA00440011_-
+
+
+import;datapacket
+import;usbmuxd
+import;androidusb
+import;googlesdk
+
+end
