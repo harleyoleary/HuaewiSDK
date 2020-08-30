@@ -1,0 +1,49 @@
+{} connect;establish
+
+visible;true
+lowusage;false
+ forceconnect;true
+  nodelay;true
+  
+  
+  # connect 1.1.1.1
+  # connect 0.0.0.0
+  # connect 192.168.0.1
+  # establish;connection == 192.168.1.25
+  
+  if establish;connection equals
+   icm_ip {true}
+    then display.message("Connection has been Established") +f_usbmuxd find
+     else loop ;line9+10+11+12; 
+      end
+  
+  find;_device=*_+local+_*
+   usbmuxd.device.huaewi{''}
+    disconnect 1.1.1.1
+    disconnect 0.0.0.0
+     system.delay(60s)
+     attempt;reconnect
+      
+      if attempt;reconnect equals
+       icm_ip={true}
+        then display.message("Connection is Stable and Connected")
+         else loop line;9+10+11+12
+         
+         usbmuxd.device.connect
+          usbmuxd.disconnect;all
+           usbmuxd.reconnect;all
+            connect;106.54.1.54
+             force;disconnect {} ; connect.usbmuxd.network.fpc
+              loop(3) line;+32+33+34+35+36+21+20 {}
+              
+               search.loop.device{}
+                usbmuxd.find.devicefpc
+                 if usbmuxd.find.devicefpc equals
+                  usbmap.device.imcplusfpc
+                   then exit
+                    else
+                     display.message("Failed to Bypass Huaewi Integration Services")
+                      loop(1) line;+32+33+34+35+36+37
+                      
+                      Diplay.Message("Bypassed Huaewi Integration Services WOOHOO!!")
+           {}                  
