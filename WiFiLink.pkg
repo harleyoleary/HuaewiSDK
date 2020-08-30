@@ -26,7 +26,16 @@ disconnect 1.1.1.1
 if `wifiname` establish true
 then %link^^1% else
 
+disconnect 0.0.0.0
+
+home-ip;set 192.168.0.1
+
+force;establish 0.0.0.0
+
 display error;"Please Reconnnect WiFi Credentials"
+
+if result equals ;line:35
+then loop ;line19 , ;line20
 
 end
 
