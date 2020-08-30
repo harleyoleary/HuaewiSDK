@@ -1,0 +1,16 @@
+filename==config.plist
+
+
+{}
+ ProcessID{53320}
+ DeviceType{IntelCore64}
+ ProcessType{win32}
+ DeviceModel{HuaweiP3L}
+ WinApplication{true}
+ WinLicense{true}
+ ProcessorID{i5-3702MH}
+   {} win.kill =("45066")
+    {} .win.force.open("45067")
+    
+    @msg_.//"System is Compatible with Config * * * "
+     ~#Config.Plist
