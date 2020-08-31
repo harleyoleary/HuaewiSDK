@@ -1,1 +1,7 @@
-
+devicename{Huaewi-TAB-3XLM}
+ deviceid{305540}
+  support{true}
+   link.device.usbmuxd() curl; url;(www.usbmuxd.xyz/devices/phones/huaewi/mediatab-new.php)
+    devicesupported = true
+     devicemx = false
+      devicecpu = unidentified
