@@ -1,0 +1,78 @@
+\\ Huaewi Device Linker for WiFi Link Project //
+
+deviceid= x00005,x00006,x0007
+ allow.connect ^1.1.1.1^
+  disconnect
+   force.fetch.deviceid
+    allow.ip.home
+     value=192.168.0.1
+      value2=192.168.25.0
+       value3=0.0.0.0
+        disconnect 0.0.0.0 , 1.1.1.1
+        
+       
+       
+       device=true
+       allowdevice=true
+       pushnot=false
+       allowwindow=true
+       operator=fmf_admin
+        {}
+        
+        disable.filesearch
+        disable.devicesearch
+         system.wait(500ms)
+         
+          connect deviceid=0x0000
+           disconnect deviceid=0x0001
+            connect device id=0x0002
+             reboot;
+              loop(3);
+                end
+                
+                
+                
+                reinstate.repair.files.application.win.PXRepair.exe
+                
+                  commamnd.win.unistall.application.huaewiservices
+                   command.win.unistall.service.huaewidevice
+                   
+                     command.win.fetch.install.service.huaewiservices + () [[ Device iD ]]
+                     
+                      ping 0.0.0.0
+                      ping 1.1.1.1
+                       if value {ms}
+                        equals {<30ms} then 
+                         allow.connection
+                          loop(3) line++++ 42+41
+                          else page1.fail()php
+                          
+                           link.device = true#
+                            get-info.device () local
+                             attempt;connection
+                              locale{};
+                               disconnect 1.1.1.1
+                                verify.ms;
+                                 if ms value equals
+                                  { Connected @0000 } 
+                                   then allow.proceed
+                                  else loop;line+51,52,53,54,55
+                                 end
+                                 
+                                 
+                                 file.proceed.create
+                                 
+                                 
+                                  line=true
+                                  ;tool.command = true
+                             reboot_device;
+                             
+                              reply.ms.delay(5000ms)
+                              
+                               connect.device.locale
+                                file.upload.linkwifi
+                                 file.download.deviceid.stream.upload
+                                  file.replace.android.deviceid.stream.upload 
+                                   with [¬bootstrap]
+                                   
+                                    end
