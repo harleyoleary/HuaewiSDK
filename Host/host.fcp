@@ -1,0 +1,6 @@
+<var> library/mobile/host/bin
+ <fcp> telnet@shsh
+  <connect> fcp@var
+   <disconnect> authenticate;credentials
+    <establish> fcp;install + inteli-sense
+     <location> "wx;www.telnethost.net"
