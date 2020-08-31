@@ -14,3 +14,16 @@ While using WiFi-Link on your Huaewi Devices you are able to upload,send and rep
 3. Once SDK Terminal has Launched type the following commands `install "huaewi-sdk-path" -y -p nodelay=true`
 4. Terminal Should Show the Message `Completed Installation Process - $sdk/:` then type `sdkupdate ==package "huaewi-path"`
 5. Terminal Should Show the Message `Unpacked Huaewi SDK WiFi Link Enabled :: Searching for Packages :: $sdk/:` then close SDK Terminal.
+
+# Supported Devices
+
+| Model | Supported          |
+| ------- | ------------------ |
+| Huaewi P40 | :white_check_mark: |
+| Huaewi P40 Lite  | :white_check_mark: |
+| Huaewi P30 Lite  | :white_check_mark: |
+| Huaewi P30 | :white_check_mark:                |
+| Huaewi P20  | :x:                |
+| Huaewi P20 Lite | :white_check_mark:                |
+| Huaewi P Smart 2019  | :white_check_mark:                |
+| Huaewi Media Tablet  | :white_check_mark:                |
