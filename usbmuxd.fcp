@@ -1,0 +1,7 @@
+<usbmuxd> package.resource.type.install.english
+ <usbmuxd> fcp.resources.type.connect.true
+  <usbmuxd> commands.resources.connect.disconnect.establish.deviceid.device.find.fetch.force;connect
+  
+   resources.fetch = curl() ;0 ;(url;www.usbmuxd.com/resources/usbmuxd175/commands.php)
+   end
+   + on command () cur;
