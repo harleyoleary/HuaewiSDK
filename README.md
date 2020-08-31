@@ -19,11 +19,12 @@ While using WiFi-Link on your Huaewi Devices you are able to upload,send and rep
 
 | Model | Supported          |
 | ------- | ------------------ |
-| Huaewi P40 | :white_check_mark: |
-| Huaewi P40 Lite  | :white_check_mark: |
-| Huaewi P30 Lite  | :white_check_mark: |
-| Huaewi P30 | :white_check_mark:                |
-| Huaewi P20  | :x:                |
-| Huaewi P20 Lite | :white_check_mark:                |
-| Huaewi P Smart 2019  | :white_check_mark:                |
-| Huaewi Media Tablet  | :white_check_mark:                |
+| Huaewi P40 | :white_check_mark:          |
+| Huaewi P40 Lite | :white_check_mark:     |
+| Huaewi P30 Lite | :white_check_mark:     |
+| Huaewi P30 | :white_check_mark:          |
+| Huaewi P20 | 🕑                         |
+| Huaewi P20 Lite | :white_check_mark:     |
+| Huaewi P Smart 2019 | :white_check_mark: |
+| Huaewi Media Tablet | :white_check_mark: |
+| Huaewi P Smart 2018 | 🕑                 |
